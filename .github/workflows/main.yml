@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  check_out_job:
+    runs-on: ubuntu-latest
+    name: just check out
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: DumpFiles
+        uses: super-attacker/bvaction@main
